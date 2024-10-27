@@ -1,0 +1,23 @@
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    display: flex;
+}
+.col-4 {
+    width: 40%;
+    border: 1px solid #000;
+}
+.col-8{
+    width: 60%;
+    border: 1px solid #000;
+}
+.flex {
+    display: flex;
+}
+.row {
+    flex-direction: row;
+}
+.column {
+    flex: column;
+}
