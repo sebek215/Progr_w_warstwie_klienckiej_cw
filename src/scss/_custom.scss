@@ -17,7 +17,7 @@
     z-index: 1;
 }
 .rectangle {
-    background-color: orange;
+    background-color: $orange;
     width: 36%;
     height: 360px;
     position: absolute;
@@ -49,7 +49,7 @@
     content: '';
     width: 90%;
     height: 1px;
-    background-color: orange;
+    background-color: $orange;
     margin-top: 8px;
     margin-bottom: 25px;
 }
@@ -67,10 +67,10 @@
     line-height: 30px;
 }
 li::marker {
-    color: orange;
+    color: $orange;
 }
 .orange {
-    color: orange;
+    color: $orange;
 }
 .info h2 {
     margin-top: 10px;
@@ -92,14 +92,37 @@ li::marker {
 }
 .rectangle-bottom {
     height: 60px;
-    background-color: orange;
+    background-color: $orange;
     width: 100%;
     right: 0;
     bottom: 0;
     position: absolute;
 }
 
+$yellow: rgb(190,190,26);
+$red: rgb(173, 15, 15);
+$blue: rgb(13, 13, 213);
 
+%circle-extend {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+.circle-yellow {
+    background-color: $yellow;
+    @extend %circle-extend;
+
+}
+.circle-red {
+    background-color: $red;
+    @extend %circle-extend;
+
+}
+.circle-blue {
+    background-color: $blue;
+    @extend %circle-extend;
+
+}
 /* .kwadrat1 {
     width: 220px;
     height: 250px;
