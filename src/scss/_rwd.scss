@@ -1,0 +1,27 @@
+@media (max-width: 992px) {
+    html {
+        font-size: 80%;
+    }
+
+}
+@media (max-width: 768px) {
+    .column-m {
+        flex-direction: column;
+    }
+    .col-100-m {
+       width: 100%;
+    }
+    .hero-img {
+        margin: 20px auto;
+        max-width: 80%;
+    }
+    .info {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .info h1,
+    .info h2 {
+        margin: 0 auto;
+    }
+}
