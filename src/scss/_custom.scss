@@ -1,0 +1,153 @@
+.icon {
+    color: var(--icon-color);
+    margin-right: 20px;
+    width: 18px;
+}
+.info {
+    padding: 10% 15%;
+}
+.skills,
+.contacts {
+    padding: 10% 5% 10% 15%;
+}
+.hero-img {
+    max-width: 100%;
+    position: relative;
+    margin-bottom: 50px;
+    z-index: 1;
+}
+.rectangle {
+    background-color: $orange;
+    width: 36%;
+    height: 360px;
+    position: absolute;
+}
+.rectangle-right {
+    width: 137%;
+    height: 360px;
+    background-color: #f7f7f7;
+    right: 0;
+    position: absolute;
+}
+.col-left,
+.col-right
+{
+    position: relative;
+}
+.profile,
+.education,
+.work {
+    position: relative;
+    padding: 0 5%;
+}
+.profile {
+    margin: 80px 20px 70px 0;
+}
+
+.title::after {
+    display: block;
+    content: '';
+    width: 90%;
+    height: 1px;
+    background-color: $orange;
+    margin-top: 8px;
+    margin-bottom: 25px;
+}
+.phone,
+.email,
+.address {
+    height: 25px;
+    align-items: center;
+}
+.skill-items {
+    list-style-type: disc;
+    margin-left: 18px;
+}
+.skill-items li {
+    line-height: 30px;
+}
+li::marker {
+    color: $orange;
+}
+.orange {
+    color: $orange;
+}
+.info h2 {
+    margin-top: 10px;
+    margin-left: -6px;
+}
+.back6 {
+    margin-left: -6px;
+}
+.company {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.date,
+.position {
+    margin-bottom: 5px;
+}
+.item {
+    margin: 10px 0 25px 0;
+}
+.rectangle-bottom {
+    height: 60px;
+    background-color: $orange;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+$yellow: rgb(190,190,26);
+$red: rgb(173, 15, 15);
+$blue: rgb(13, 13, 213);
+
+%circle-extend {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+.circle-yellow {
+    background-color: $yellow;
+    @extend %circle-extend;
+
+}
+.circle-red {
+    background-color: $red;
+    @extend %circle-extend;
+
+}
+.circle-blue {
+    background-color: $blue;
+    @extend %circle-extend;
+
+}
+/* .kwadrat1 {
+    width: 220px;
+    height: 250px;
+    padding-left: 10px;
+    padding-right: 20px;
+    background-color: lightblue; 
+}
+
+.kwadrat2 {
+    width: 250px; 
+    height: 300px;
+    margin: 15px 5px 15px 5px; 
+    background-color: lightcoral; 
+} */
+
+
+/* .rodzic {
+    font-size: 20px;
+}
+.dziecko {
+    font-size: 1em; 
+}
+html {
+    font-size: 16px; 
+}
+.anna-nowak {
+    font-size: 1rem; 
+} */

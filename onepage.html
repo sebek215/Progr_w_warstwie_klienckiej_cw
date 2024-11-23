@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="home">
+    <div class="gb-img"></div>
+    <div class="container">
+        <!-- Nagłówek -->
+        <header class="sticky-header">
+            <nav class="main menu">
+                <ul class="main-menu-inner">
+                    <li class="main-menu-item"><a href="#home">Strona główna</a></li>
+                    <li class="main-menu-item"><a href="#offer">Oferta</a></li>
+                    <li class="main-menu-item"><a href="#blog">Blog</a></li>
+                    <li class="main-menu-item"><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Część główna -->
+        <main class="content">
+            <div class="section" id="offer"><h2>Oferta</h2></div>
+            <div class="section" id="blog"><h2>Blog</h2></div>
+            <div class="section" id="contact"><h2>Kontakt</h2></div>
+        </main>
+        <!-- Stopka -->
+         <footer class="footer">
+            <form action="" method="get">
+                <input type="text" name="" class="white" id="white" placeholder="Imię">
+                <input type="text" name="" class="blue" id="blue" placeholder="Nazwisko">
+                <input type="email" name="" id="E-mail">
+                <button type="submit">Wyślij</button>
+                <input type="button" onclick="zmianaKoloru()" value="Zmień kolor pól tekstowych">
+                <input type="button" onclick="zmianaPolozenia()" value="zmień położenie">
+            </form>
+            <div class="box1">1</div>
+            <div class="box2" id="box2">2</div>
+            <style>
+                .box1,
+                .box2 {
+                    background-color: red;
+                    width: 50px;
+                    height: 50px;
+                    margin: 30px;
+                    position: relative;
+                    left: 0;
+                    transition: left 1s ease-in-out;
+                    
+                }
+                .box1 {
+                    animation: animacja 5s infinite;
+                }
+                @keyframes animacja {
+                    0% {
+                        width: 20px;
+                        height: 20px;
+                    }
+                    15% {
+                        top: 50px;
+                    }
+                    40% {
+                        width: 50px;
+                        height: 50px;
+                    }
+                    80% {
+                        width: 50px;
+                        height: 50px;
+                    }
+                    100% {
+                        top: 0;
+                    }
+                }
+                
+            </style>
+         </footer>
+    </div>
+    <div id="Wyświetlacz"></div>
+
+    <script src="script.js"></script>
+
+<!-- go to the top  -->
+ <a href="#">
+    <span class="to-top">TOP</span>
+ </a>
+
+<div>
+
+</div>
+
+<label for="button" class="button">Przycisk</label>
+<input type="checkbox" name="" id="button" class="dropdown-btn">
+
+<div class="dropdown">
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+    <p>4</p>
+    <p>5</p>
+</div>
+<style>
+    .dropdown {
+        visibility: hidden;
+        height: 0;
+        width: 300px;
+        transition: height 0.3s ease-in-out;
+    }
+    .dropdown-btn:checked ~ .dropdown {
+        visibility: visible;
+        width: 300px;
+        height: 300px;
+        background-color: #cbcbcb;
+        transition: height 0.3s ease-in-out;
+        padding: 10px;
+    }
+    .dropdown-btn {
+        display: none;
+    }
+    .button {
+        width: 100px;
+        height: 20px;
+        background-color: white;
+        text-align: center;
+        cursor: pointer;
+        padding: 10px;
+    }
+</style>
+
+
+</body>
+</html>
